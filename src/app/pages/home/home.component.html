@@ -1,46 +1,133 @@
-
-<div class="wrapper">
-  <div class="page-header header-filter">
-    <div class="squares square1"></div>
-    <div class="squares square2"></div>
-    <div class="squares square3"></div>
-    <div class="squares square4"></div>
-    <div class="squares square5"></div>
-    <div class="squares square6"></div>
-    <div class="squares square7"></div>
-    <div class="container">
-      <div class="content-center brand">
-        <h1 class="h1-seo">News•</h1>
-        <h3>
-          All News, All Languages
-        </h3>
-
-        <div class="form-group">
-          <input [(ngModel)]="newsHeaderName" type="text" placeholder="Search News" class="form-control">
+<div class="container-fluid mt-5" style="padding-top: 0px;">
+    <a href="https://www.mcdonalds.rs/" target="blank">
+        <div
+            style="width: 160px; height: 600px; color: #fff; line-height: 600px; text-align: center; position: fixed; top: 150px; left: 80px; background-image: url('../../assets/images/ad1-web.gif');">
         </div>
-        <button (click)="getNews()" class="btn btn-info">Search</button>
-      </div>
+    </a>
+
+    <a href="https://www.corkairport.com/" target="blank">
+        <div
+            style="width: 160px; height: 600px; color: #fff; line-height: 600px; text-align: center; position: fixed; top: 150px; right: 80px; background-image: url('../../assets/images/J100-web.gif');">
+        </div>
+    </a>
+
+    <div class="wrapper" style="background-color: white; margin: 135px 300px 0px 300px; padding-top: 20px;">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="blank">
+            <div
+                style="width: 728px; height: 90px; color: #fff; line-height: 90px; text-align: center; margin: 0 auto; background-image: url('../../assets/images/ezgif.com-gif-maker.gif'); background-position: center; background-size: cover;">
+            </div>
+        </a>
+
+        <h2
+            style="margin-left: 32px; margin-right: 34px; margin-top: 20px; padding: 10px 0px 10px 20px; background: linear-gradient(180deg, rgba(31,31,31,1) 0%, rgba(0,0,0,1) 100%); color: white;">
+            World Trending</h2>
+        <div class="trending" style="padding: 0 20px;">
+            <table id="ubijme" style="margin: 0 auto; width: 98%;">
+                <tr>
+                    <td>
+                        <a href="{{topHeadingDisplay[0].url}}" id="link" target="blank"
+                            style="text-decoration: none; color: black;">
+                            <div id="trending-box"
+                                style="background-image: url('{{topHeadingDisplay[0].urlToImage}}'); background-size: cover; background-position: center;">
+                                <div id="text">
+                                    <h5 class="mt-2 mb-2">{{topHeadingDisplay[0].title}}</h5>
+                                    <h6 class="mt-2 mb-2">{{topHeadingDisplay[0].author}}</h6>
+                                </div>
+                            </div>
+                        </a>
+                    </td>
+                    <td>
+                        <table id="grid-table" style="margin: 0 auto; width: 100%;">
+                            <tr>
+                                <td align="center">
+                                    <a href="{{topHeadingDisplay[1].url}}" id="link" target="blank"
+                                        style="text-decoration: none; color: black;">
+                                        <div id="trending-box-grid"
+                                            style="background-image: url('{{topHeadingDisplay[1].urlToImage}}'); background-size: cover; background-position: center;">
+                                            <div id="text">
+                                                <h6 class="mt-2 mb-2">{{topHeadingDisplay[1].title}}</h6>
+                                                <h6 style="font-size: smaller;" class="mt-2 mb-2">
+                                                    {{topHeadingDisplay[1].author}}</h6>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td align="center">
+                                    <a href="{{topHeadingDisplay[2].url}}" id="link" target="blank"
+                                        style="text-decoration: none; color: black;">
+                                        <div id="trending-box-grid"
+                                            style="background-image: url('{{topHeadingDisplay[2].urlToImage}}'); background-size: cover; background-position: center;">
+                                            <div id="text">
+                                                <h6 class="mt-2 mb-2">{{topHeadingDisplay[2].title}}</h6>
+                                                <h6 style="font-size: smaller;" class="mt-2 mb-2">
+                                                    {{topHeadingDisplay[2].author}}</h6>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <a href="{{topHeadingDisplay[3].url}}" id="link" target="blank"
+                                        style="text-decoration: none; color: black;">
+                                        <div id="trending-box-grid"
+                                            style="background-image: url('{{topHeadingDisplay[3].urlToImage}}'); background-size: cover; background-position: center;">
+                                            <div id="text">
+                                                <h6 class="mt-2 mb-2">{{topHeadingDisplay[3].title}}</h6>
+                                                <h6 style="font-size: smaller;" class="mt-2 mb-2">
+                                                    {{topHeadingDisplay[3].author}}</h6>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td align="center">
+                                    <a href="{{topHeadingDisplay[4].url}}" id="link" target="blank"
+                                        style="text-decoration: none; color: black;">
+                                        <div id="trending-box-grid"
+                                            style="background-image: url('{{topHeadingDisplay[4].urlToImage}}'); background-size: cover; background-position: center;">
+                                            <div id="text">
+                                                <h6 class="mt-2 mb-2">{{topHeadingDisplay[4].title}}</h6>
+                                                <h6 style="font-size: smaller;" class="mt-2 mb-2">
+                                                    {{topHeadingDisplay[4].author}}</h6>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+        <!--Latest News-->
+        <h2
+            style="margin-left: 32px; margin-right: 34px; margin-top: 20px; padding: 10px 0px 10px 20px; background: linear-gradient(180deg, rgba(31,31,31,1) 0%, rgba(0,0,0,1) 100%); color: white;">
+            Top Headlines</h2>
+        <div class="row" style="margin: 0px 20px;">
+            <div *ngFor="let d of topHeadingDisplay.slice(5)" class="col-lg-3 mt-3 mb-3">
+                <a href="{{d.url}}" target="blank" style="text-decoration: none; color: black;">
+                    <div id="box" class="test">
+                        <img src="{{d.urlToImage}}" alt="Slika" width="100%" height="180px"
+                            onerror="this.src='../assets/images/logo.png';">
+                        <!-- Izmenjaj ovo -->
+                        <h4 class="mt-2 mb-2" style="padding: 0px 10px;">{{d.title}}</h4>
+                        <h6 class="mt-2 mb-2" style="padding: 0px 10px;">{{d.description}}</h6>
+                        <table style="margin: 0 10px 10px 10px;">
+                            <tr>
+                                <td>
+                                    <div style="width: 3.5px; height: 20px; background-color: red; margin-right: 7px;">
+                                    </div>
+                                </td>
+                                <td>
+                                    <h6 class="mt-2 mb-2" style="font-weight: bold;">{{d.author}}</h6>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="main">
-    <div class="section section-basic" id="basic-elements">
-      <img class="path" src="assets/img/path1.png" />
-
-
-    </div>
-
-
-  </div>
-
-  <ngx-spinner
-  bdColor="rgba(51,51,51,0.8)"
-  size="medium"
-  color="#fff"
-  bdOpacity = "0.9"
-  type="ball-scale-multiple"
-  [fullScreen] = "true"
->
-  <p style="font-size: 20px; color: white">Loading...</p>
-</ngx-spinner>
 </div>
-

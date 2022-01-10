@@ -10,14 +10,14 @@ const API_URL = 'https://newsapi.org/v2/';
 })
 export class NewsService {
 
-  apiKey = '6833ba8c92714b6e9a5f058afe51d071';
+  apiKey = 'd84b9e15aa83476497920e10fcfdf794';
 
-constructor(private http: HttpClient) {
-}
+  constructor(private http: HttpClient) {
+  }
 
-getNewsByHeaderName(payload: any): Observable<News> {
-  return this.http.get<News>(API_URL + `everything?q=${payload.name}&from=${payload.date}&sortBy=publishedAt&apiKey=${this.apiKey}`);
-}
+  getNewsByHeaderName(payload: any): Observable<News> {
+    return this.http.get<News>(API_URL + `everything?q=${payload.name}&from=${payload.date}&sortBy=publishedAt&language=en&apiKey=${this.apiKey}`);
+  }
 
 
 }
