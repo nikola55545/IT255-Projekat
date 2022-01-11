@@ -44,17 +44,25 @@
 .search-bar {
   background-color: #333333;
   border: solid thin #333333;
-  border-radius: 50px;
+  border-radius: 5px 0px 0px 5px;
   padding: 6px 20px;
   color: white;
+  width: 300px;
+  resize: none;
+  outline: none;
+}
+.search-bar::placeholder {
   font-size: smaller;
-  width: 400px;
 }
 .btn-search {
   background-color: #333333;
   border: solid thin #333333;
   color: white;
-  border-radius: 50px;
+  border-radius: 0px 5px 5px 0px;
   padding: 6px 11px;
   cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-search:hover {
+  background-color: #474747;
 }
