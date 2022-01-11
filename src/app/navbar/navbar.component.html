@@ -1,15 +1,24 @@
 <div class="nav">
     <table>
         <tr>
-            <td style="background: linear-gradient(180deg, rgba(31,31,31,1) 0%, rgba(0,0,0,1) 100%); padding-bottom: 15px;"
-                align="center">
-                <a routerLink=""><img src="../assets/images/logo.png" width="150px" alt=""></a>
+            <td style="background: linear-gradient(180deg, rgba(31,31,31,1) 0%, rgba(0,0,0,1) 100%); padding-left: 16%;"
+                align="left"><a routerLink=""><img src="../assets/images/logo.png" width="150px" alt=""></a>
+            </td>
+
+            <td style="background: linear-gradient(180deg, rgba(31,31,31,1) 0%, rgba(0,0,0,1) 100%);" align="center">
+
+            </td>
+
+            <td style="background: linear-gradient(180deg, rgba(31,31,31,1) 0%, rgba(0,0,0,1) 100%); padding-right: 16%;"
+                align="right">
                 <input [(ngModel)]="newsHeaderName" type="text" placeholder="Pretraži novosti..." class="search-bar">
-                <button (click)="getNews()" class="btn-search">Pretraži</button>
+                <button (click)="getNews()" class="btn-search">
+                    <fa-icon [icon]="faSearch"></fa-icon>
+                </button>
             </td>
         </tr>
         <tr>
-            <td align="center">
+            <td align="center" colspan="3">
                 <ul>
                     <li><a routerLink="">World</a></li>
                     <li><a routerLink="business">Business</a></li>

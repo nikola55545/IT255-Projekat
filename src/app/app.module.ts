@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './navbar/navbar.component';
+import { CommonModule } from '@angular/common';
 
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { FooterComponent } from './footer/footer.component';
@@ -16,6 +17,8 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { EffectsModule } from '@ngrx/effects';
 
 import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AngularWeatherWidgetModule } from 'angular2-weather-widget';
 
 @NgModule({
   declarations: [
@@ -27,12 +30,15 @@ import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
     BrowserModule,
     AppRoutingModule,
     PagesModule,
+    CommonModule,
+    AngularWeatherWidgetModule,
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
     RouterModule,
     NgxSpinnerModule,
     LoadingBarHttpClientModule,
+    FontAwesomeModule,
     StoreModule.forRoot({}),
     StoreDevtoolsModule.instrument(),
     EffectsModule.forRoot([]),

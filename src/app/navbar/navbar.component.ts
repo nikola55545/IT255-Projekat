@@ -9,6 +9,7 @@ import * as fromNews from '../state/news-state/news.reducer';
 import { News } from 'src/app/models/news';
 import { Observable } from 'rxjs';
 import { select, Store } from '@ngrx/store';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-navbar',
@@ -16,6 +17,8 @@ import { select, Store } from '@ngrx/store';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
+
+  faSearch = faSearch;
 
   isCollapsed = true;
   focus;
