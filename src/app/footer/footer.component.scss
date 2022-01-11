@@ -3,3 +3,41 @@
   width: 100%;
   color: white;
 }
+p {
+  margin: 0;
+  text-align: center;
+}
+.footer {
+  table {
+    width: 100%;
+    tr {
+      &:first-child {
+        td {
+          background-color: #0c0c0c;
+          > * {
+            vertical-align: middle;
+            margin: 0 10px;
+          }
+        }
+      }
+    }
+  }
+  ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 8px 0px;
+    li {
+      display: inline-table;
+      a {
+        text-decoration: none;
+        color: white;
+        padding: 10px 15px;
+        transition: all 0.2s;
+        cursor: pointer;
+        &:hover {
+          background-color: #333333;
+        }
+      }
+    }
+  }
+}
