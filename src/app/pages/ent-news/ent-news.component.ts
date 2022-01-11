@@ -4,7 +4,7 @@ import { NewsapiservicesService } from '../../services/newsapiservices.service';
 @Component({
   selector: 'app-ent-news',
   templateUrl: './ent-news.component.html',
-  styleUrls: ['./ent-news.component.css']
+  styleUrls: ['./ent-news.component.scss']
 })
 export class EntNewsComponent implements OnInit {
 

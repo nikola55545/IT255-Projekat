@@ -4,7 +4,7 @@ import { NewsapiservicesService } from '../../services/newsapiservices.service';
 @Component({
   selector: 'app-science-news',
   templateUrl: './science-news.component.html',
-  styleUrls: ['./science-news.component.css']
+  styleUrls: ['./science-news.component.scss']
 })
 export class ScienceNewsComponent implements OnInit {
 

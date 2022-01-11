@@ -4,7 +4,7 @@ import { NewsapiservicesService } from '../../services/newsapiservices.service';
 @Component({
   selector: 'app-health-news',
   templateUrl: './health-news.component.html',
-  styleUrls: ['./health-news.component.css']
+  styleUrls: ['./health-news.component.scss']
 })
 export class HealthNewsComponent implements OnInit {
 

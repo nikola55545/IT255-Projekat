@@ -4,7 +4,7 @@ import { NewsapiservicesService } from '../../services/newsapiservices.service';
 @Component({
   selector: 'app-tech-news',
   templateUrl: './tech-news.component.html',
-  styleUrls: ['./tech-news.component.css']
+  styleUrls: ['./tech-news.component.scss']
 })
 export class TechNewsComponent implements OnInit {
 
