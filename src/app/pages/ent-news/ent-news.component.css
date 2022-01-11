@@ -1,0 +1,41 @@
+#trending-box {
+  position: relative;
+  width: 600px;
+  height: 340px;
+  color: white;
+}
+#trending-box-grid {
+  position: relative;
+  width: 300px;
+  height: 168px;
+  color: white;
+}
+#grid-table td {
+  padding: 2px;
+}
+#text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 10px;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 8%,
+    rgba(0, 0, 0, 0.2329306722689075) 73%,
+    rgba(35, 99, 246, 0) 100%
+  );
+}
+.test {
+  transition: all 0.15s;
+}
+.test:hover {
+  background-color: rgb(219, 219, 219);
+}
+#box {
+  border: solid thin rgb(219, 219, 219);
+  border-radius: 10px;
+}
+#box img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}

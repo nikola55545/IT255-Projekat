@@ -14,8 +14,24 @@ import { EffectsModule } from '@ngrx/effects';
 import { newsReducer } from '../state/news-state/news.reducer';
 import { NewsEffects } from '../state/news-state/news.effects';
 
+import { BusinessNewsComponent } from './business-news/business-news.component';
+import { EntNewsComponent } from './ent-news/ent-news.component';
+import { HealthNewsComponent } from './health-news/health-news.component';
+import { ScienceNewsComponent } from './science-news/science-news.component';
+import { SportNewsComponent } from './sport-news/sport-news.component';
+import { TechNewsComponent } from './tech-news/tech-news.component';
+
 @NgModule({
-  declarations: [HomeComponent, NewsListComponent],
+  declarations: [
+    HomeComponent,
+    NewsListComponent,
+    BusinessNewsComponent,
+    EntNewsComponent,
+    HealthNewsComponent,
+    ScienceNewsComponent,
+    SportNewsComponent,
+    TechNewsComponent
+  ],
   imports: [
     CommonModule,
     BrowserModule,
@@ -29,7 +45,7 @@ import { NewsEffects } from '../state/news-state/news.effects';
     HomeComponent,
     NewsListComponent
   ],
-  providers:[
+  providers: [
     NewsService
   ]
 })
