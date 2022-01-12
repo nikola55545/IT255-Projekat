@@ -4,22 +4,20 @@
             <td style="background: linear-gradient(180deg, rgba(31,31,31,1) 0%, rgba(0,0,0,1) 100%); padding-left: 16%;"
                 align="left"><a routerLink=""><img src="../assets/images/logo.png" width="150px" alt=""></a>
             </td>
-
-            <td style="background: linear-gradient(180deg, rgba(31,31,31,1) 0%, rgba(0,0,0,1) 100%);" align="left">
-                <angular-weather-widget style="margin: 0; padding: 0;" [APIKEY]="'5e62b81538861ffa41c4f76d43017f6d'"
-                    [width]="'fit-content'" [height]="'auto'" [backgroundColor]="'false'" [isBoxShadow]="false"
-                    [borderRadius]="'5px'" [locationFontSize]="'15px'" [locationFontColor]="'white'" [status]="false"
-                    [statusFontColor]="'#fff'" [statusFontSize]="'18px'" [temperature]="true"
-                    [tempratureFontColor]="'white'" [tempratureFontSize]="'15px'" [weatherImages]="true"
-                    [weatherImageWidth]="'25px'" [weatherImageHeight]="'25px'" [geoLocation]="true" [location]="''"
-                    [isWind]="false" [windFontColor]="'#fff'" [windFontSize]="'17px'" [humidityFontColor]="'#fff'"
-                    [humidityFontSize]="'17px'" [isHumidity]="false">
-                </angular-weather-widget>
-            </td>
-
             <td style="background: linear-gradient(180deg, rgba(31,31,31,1) 0%, rgba(0,0,0,1) 100%); padding-right: 16%;"
                 align="right">
                 <div id="wrapper">
+                    <angular-weather-widget
+                        style="margin: 0; padding: 0; display:inline-block; vertical-align:middle; text-align: left;"
+                        [APIKEY]="'5e62b81538861ffa41c4f76d43017f6d'" [width]="'fit-content'" [height]="'auto'"
+                        [backgroundColor]="'false'" [isBoxShadow]="false" [borderRadius]="'5px'"
+                        [locationFontSize]="'15px'" [locationFontColor]="'white'" [status]="false"
+                        [statusFontColor]="'#fff'" [statusFontSize]="'18px'" [temperature]="true"
+                        [tempratureFontColor]="'white'" [tempratureFontSize]="'15px'" [weatherImages]="true"
+                        [weatherImageWidth]="'25px'" [weatherImageHeight]="'25px'" [geoLocation]="true" [location]="''"
+                        [isWind]="false" [windFontColor]="'#fff'" [windFontSize]="'17px'" [humidityFontColor]="'#fff'"
+                        [humidityFontSize]="'17px'" [isHumidity]="false">
+                    </angular-weather-widget>
                     <input [(ngModel)]="newsHeaderName" type="text" placeholder="Pretraži novosti..."
                         class="search-bar">
                     <button (click)="getNews()" class="btn-search">
@@ -29,7 +27,7 @@
             </td>
         </tr>
         <tr>
-            <td align="center" colspan="3">
+            <td align="center" colspan="2">
                 <ul>
                     <li><a routerLink="">World</a></li>
                     <li><a routerLink="business">Business</a></li>
