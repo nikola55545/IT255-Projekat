@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NewsapiservicesService } from '../../services/newsapiservices.service';
-
+import { Title } from "@angular/platform-browser";
 @Component({
   selector: 'app-science-news',
   templateUrl: './science-news.component.html',
@@ -8,7 +8,9 @@ import { NewsapiservicesService } from '../../services/newsapiservices.service';
 })
 export class ScienceNewsComponent implements OnInit {
 
-  constructor(private _services: NewsapiservicesService) { }
+  constructor(private _services: NewsapiservicesService, private titleService: Title) {
+    this.titleService.setTitle("NetNews | Science Trending");
+  }
 
   //Prikazi podatke
   scienceDisplay: any = [];

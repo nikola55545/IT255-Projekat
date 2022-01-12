@@ -6,6 +6,7 @@ import { News } from 'src/app/models/news';
 import { Store, select } from '@ngrx/store';
 import * as newsActions from '../../state/news-state/news.actions';
 import * as fromNews from '../../state/news-state/news.reducer';
+import { Title } from "@angular/platform-browser";
 @Component({
   selector: 'app-news-list',
   templateUrl: './news-list.component.html',
@@ -17,7 +18,9 @@ export class NewsListComponent implements OnInit {
   extData: any;
   // news$: Observable<News[]>;
   error$: Observable<String>;
-  constructor(private dataService: DataService, private router: Router, private store: Store<fromNews.AppState>) { }
+  constructor(private dataService: DataService, private router: Router, private store: Store<fromNews.AppState>, private titleService: Title) {
+    this.titleService.setTitle("NetNews | Search Results");
+  }
 
   ngOnInit() {
     this.news = this.store.pipe(select(fromNews.getNews));

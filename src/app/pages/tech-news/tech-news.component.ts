@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NewsapiservicesService } from '../../services/newsapiservices.service';
-
+import { Title } from "@angular/platform-browser";
 @Component({
   selector: 'app-tech-news',
   templateUrl: './tech-news.component.html',
@@ -8,7 +8,9 @@ import { NewsapiservicesService } from '../../services/newsapiservices.service';
 })
 export class TechNewsComponent implements OnInit {
 
-  constructor(private _services: NewsapiservicesService) { }
+  constructor(private _services: NewsapiservicesService, private titleService: Title) {
+    this.titleService.setTitle("NetNews | Technology Trending");
+  }
 
   //Prikazi podatke
   techDisplay: any = [];

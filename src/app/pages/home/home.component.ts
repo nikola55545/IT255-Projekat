@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NewsapiservicesService } from '../../services/newsapiservices.service';
+import { Title } from "@angular/platform-browser";
 
 @Component({
   selector: 'app-home',
@@ -8,7 +9,9 @@ import { NewsapiservicesService } from '../../services/newsapiservices.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private _services: NewsapiservicesService) { }
+  constructor(private _services: NewsapiservicesService, private titleService: Title) {
+    this.titleService.setTitle("NetNews | World Trending");
+  }
 
   //Prikazi podatke
   topHeadingDisplay: any = [];
