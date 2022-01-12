@@ -19,6 +19,7 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 export class NavbarComponent implements OnInit {
 
   faSearch = faSearch;
+  weatherDisplay: any;
 
   isCollapsed = true;
   focus;

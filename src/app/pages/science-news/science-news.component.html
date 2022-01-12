@@ -20,7 +20,7 @@
 
         <h2
             style="margin-left: 32px; margin-right: 34px; margin-top: 20px; padding: 10px 0px 10px 20px; background: linear-gradient(180deg, rgba(31,31,31,1) 0%, rgba(0,0,0,1) 100%); color: white;">
-            Science Trending</h2>
+            World Trending</h2>
         <div class="trending" style="padding: 0 20px;">
             <table id="ubijme" style="margin: 0 auto; width: 98%;">
                 <tr>
@@ -31,7 +31,9 @@
                                 style="background-image: url('{{scienceDisplay[0].urlToImage}}'); background-size: cover; background-position: center;">
                                 <div id="text">
                                     <h5 class="mt-2 mb-2">{{scienceDisplay[0].title}}</h5>
-                                    <h6 class="mt-2 mb-2">{{scienceDisplay[0].author}}</h6>
+                                    <h6 class="mt-2 mb-2" style="font-weight: bold; color: orange;">
+                                        {{scienceDisplay[0].author}}
+                                    </h6>
                                 </div>
                             </div>
                         </a>
@@ -46,7 +48,8 @@
                                             style="background-image: url('{{scienceDisplay[1].urlToImage}}'); background-size: cover; background-position: center;">
                                             <div id="text">
                                                 <h6 class="mt-2 mb-2">{{scienceDisplay[1].title}}</h6>
-                                                <h6 style="font-size: smaller;" class="mt-2 mb-2">
+                                                <h6 style="font-size: smaller; font-weight: bold; color: orange;"
+                                                    class="mt-2 mb-2">
                                                     {{scienceDisplay[1].author}}</h6>
                                             </div>
                                         </div>
@@ -59,7 +62,8 @@
                                             style="background-image: url('{{scienceDisplay[2].urlToImage}}'); background-size: cover; background-position: center;">
                                             <div id="text">
                                                 <h6 class="mt-2 mb-2">{{scienceDisplay[2].title}}</h6>
-                                                <h6 style="font-size: smaller;" class="mt-2 mb-2">
+                                                <h6 style="font-size: smaller; font-weight: bold; color: orange;"
+                                                    class="mt-2 mb-2">
                                                     {{scienceDisplay[2].author}}</h6>
                                             </div>
                                         </div>
@@ -74,7 +78,8 @@
                                             style="background-image: url('{{scienceDisplay[3].urlToImage}}'); background-size: cover; background-position: center;">
                                             <div id="text">
                                                 <h6 class="mt-2 mb-2">{{scienceDisplay[3].title}}</h6>
-                                                <h6 style="font-size: smaller;" class="mt-2 mb-2">
+                                                <h6 style="font-size: smaller; font-weight: bold; color: orange;"
+                                                    class="mt-2 mb-2">
                                                     {{scienceDisplay[3].author}}</h6>
                                             </div>
                                         </div>
@@ -87,7 +92,8 @@
                                             style="background-image: url('{{scienceDisplay[4].urlToImage}}'); background-size: cover; background-position: center;">
                                             <div id="text">
                                                 <h6 class="mt-2 mb-2">{{scienceDisplay[4].title}}</h6>
-                                                <h6 style="font-size: smaller;" class="mt-2 mb-2">
+                                                <h6 style="font-size: smaller; font-weight: bold; color: orange;"
+                                                    class="mt-2 mb-2">
                                                     {{scienceDisplay[4].author}}</h6>
                                             </div>
                                         </div>
@@ -104,12 +110,11 @@
         <!--Latest News-->
         <h2
             style="margin-left: 32px; margin-right: 34px; margin-top: 20px; padding: 10px 0px 10px 20px; background: linear-gradient(180deg, rgba(31,31,31,1) 0%, rgba(0,0,0,1) 100%); color: white;">
-            Top
-            Headlines</h2>
+            Top Headlines</h2>
         <div class="row" style="margin: 0px 20px;">
-            <div *ngFor="let d of scienceDisplay.slice(5)" class="col-lg-3 mt-3 mb-3 test">
+            <div *ngFor="let d of scienceDisplay.slice(5)" class="col-lg-3 mt-3 mb-3">
                 <a href="{{d.url}}" target="blank" style="text-decoration: none; color: black;">
-                    <div id="box">
+                    <div id="box" class="test">
                         <img src="{{d.urlToImage}}" alt="Slika" width="100%" height="170px"
                             onerror="this.src='../assets/images/logo.png';">
                         <!-- Izmenjaj ovo -->

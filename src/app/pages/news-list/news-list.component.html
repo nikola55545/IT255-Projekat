@@ -11,7 +11,7 @@
     </div>
     <div class="col-lg-9">
       <div *ngFor="let item of newsUpdated.articles" class="card text-left">
-        <img class="card-img-top" src="{{item.urlToImage}}" alt="">
+        <img class="card-img-top" src="{{item.urlToImage}}" alt="" onerror="this.src='../assets/images/logo.png';">
         <div class="card-body">
           <h4 class="card-title">{{item.title}}</h4>
           <p class="card-text">{{item.publishedAt | date: 'dd/MM/yyyy HH:mm:ss'}}</p>
