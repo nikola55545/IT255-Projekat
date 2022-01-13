@@ -6,7 +6,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
-import { NewsService } from '../services/news.service';
+import { NewsapiservicesService } from '../services/newsapiservices.service';
 import { NewsListComponent } from './news-list/news-list.component';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { StoreModule } from '@ngrx/store';
@@ -46,7 +46,7 @@ import { TechNewsComponent } from './tech-news/tech-news.component';
     NewsListComponent
   ],
   providers: [
-    NewsService
+    NewsapiservicesService
   ]
 })
 export class PagesModule { }

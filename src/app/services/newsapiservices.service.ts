@@ -1,6 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { News } from 'src/app/models/news';
+
+const API_URL = 'https://newsapi.org/v2/';
 
 @Injectable({
   providedIn: 'root'
@@ -17,6 +20,7 @@ export class NewsapiservicesService {
   scienceApiUrl = "https://newsapi.org/v2/top-headlines?country=us&category=science&apiKey=d84b9e15aa83476497920e10fcfdf794";
   sportApiUrl = "https://newsapi.org/v2/top-headlines?country=us&category=sport&apiKey=d84b9e15aa83476497920e10fcfdf794";
   techApiUrl = "https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=d84b9e15aa83476497920e10fcfdf794";
+  apiKey = 'd84b9e15aa83476497920e10fcfdf794';
 
   //Top Heading
   topHeading(): Observable<any> {
@@ -45,5 +49,8 @@ export class NewsapiservicesService {
   //Tehnologija
   techHeading(): Observable<any> {
     return this._http.get(this.techApiUrl);
+  }
+  getNewsByHeaderName(payload: any): Observable<News> {
+    return this._http.get<News>(API_URL + `everything?q=${payload.name}&from=${payload.date}&sortBy=publishedAt&language=en&apiKey=${this.apiKey}`);
   }
 }
