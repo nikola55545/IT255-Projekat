@@ -12,19 +12,21 @@ export class NewsapiservicesService {
 
   constructor(private _http: HttpClient) { }
 
+  apiKey = 'd84b9e15aa83476497920e10fcfdf794';
+
   //Ajde pomozi Boze
-  newApiUrl = "https://newsapi.org/v2/top-headlines?country=us&apiKey=d84b9e15aa83476497920e10fcfdf794";
+  mainApiUrl = "https://newsapi.org/v2/top-headlines?country=us&apiKey=d84b9e15aa83476497920e10fcfdf794";
   businessApiUrl = "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=d84b9e15aa83476497920e10fcfdf794";
   entApiUrl = "https://newsapi.org/v2/top-headlines?country=us&category=entertainment&apiKey=d84b9e15aa83476497920e10fcfdf794";
   healthApiUrl = "https://newsapi.org/v2/top-headlines?country=us&category=health&apiKey=d84b9e15aa83476497920e10fcfdf794";
   scienceApiUrl = "https://newsapi.org/v2/top-headlines?country=us&category=science&apiKey=d84b9e15aa83476497920e10fcfdf794";
   sportApiUrl = "https://newsapi.org/v2/top-headlines?country=us&category=sport&apiKey=d84b9e15aa83476497920e10fcfdf794";
   techApiUrl = "https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=d84b9e15aa83476497920e10fcfdf794";
-  apiKey = 'd84b9e15aa83476497920e10fcfdf794';
+
 
   //Top Heading
   topHeading(): Observable<any> {
-    return this._http.get(this.newApiUrl);
+    return this._http.get(this.mainApiUrl);
   }
   //Biznis
   businessHeading(): Observable<any> {
