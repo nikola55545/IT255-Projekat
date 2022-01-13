@@ -10,14 +10,16 @@
       </ul>
     </div>
     <div class="col-lg-9">
-      <div *ngFor="let item of newsUpdated.articles" class="card text-left">
-        <img class="card-img-top" src="{{item.urlToImage}}" alt="" onerror="this.src='../assets/images/logo.png';">
-        <div class="card-body">
-          <h4 class="card-title">{{item.title}}</h4>
-          <p class="card-text">{{item.publishedAt | date: 'dd/MM/yyyy HH:mm:ss'}}</p>
-          <p class="card-text">{{item.description}}</p>
-          <p class="card-text btn-more"><a href="{{item.url}}" target="blank">Više</a></p>
-        </div>
+      <div *ngFor="let item of newsUpdated.articles" class="card text-left" style="margin: 0px 0px 10px 0px">
+        <a href="{{item.url}}" target="blank" style="color: black; text-decoration: none;">
+          <img class="card-img-top" src="{{item.urlToImage}}" alt="" onerror="this.src='../assets/images/logo.png';">
+          <div class="card-body">
+            <h4 class="card-title" style="font-weight: bold;">{{item.title}}</h4>
+            <p class="card-text">{{item.publishedAt | date: 'dd/MM/yyyy HH:mm:ss'}}</p>
+            <p class="card-text">{{item.description}}</p>
+            <p class="card-text" style="color: orange; font-weight: bold;">{{item.author}}</p>
+          </div>
+        </a>
       </div>
     </div>
 
