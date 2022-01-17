@@ -20,6 +20,9 @@ import { HealthNewsComponent } from './health-news/health-news.component';
 import { ScienceNewsComponent } from './science-news/science-news.component';
 import { SportNewsComponent } from './sport-news/sport-news.component';
 import { TechNewsComponent } from './tech-news/tech-news.component';
+import { AdminPanelComponent } from './admin-panel/admin-panel.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,10 @@ import { TechNewsComponent } from './tech-news/tech-news.component';
     HealthNewsComponent,
     ScienceNewsComponent,
     SportNewsComponent,
-    TechNewsComponent
+    TechNewsComponent,
+    AdminPanelComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     CommonModule,

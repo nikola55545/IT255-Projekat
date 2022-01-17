@@ -12,17 +12,17 @@ export enum NewsActionTypes {
 
 export class LoadNews implements Action {
     readonly type = NewsActionTypes.LOAD_NEWS;
-    constructor(public payload: NewsInput) {}
+    constructor(public payload: NewsInput) { }
 }
 
 export class LoadNewsSuccess implements Action {
     readonly type = NewsActionTypes.LOAD_NEWS_SUCCESS;
-    constructor(public payload: News) {}
+    constructor(public payload: News) { }
 }
 
 export class LoadNewsFail implements Action {
     readonly type = NewsActionTypes.LOAD_NEWS_FAIL;
-    constructor(public payload: string) {}
+    constructor(public payload: string) { }
 }
 
 export type Action2 = LoadNews | LoadNewsSuccess | LoadNewsFail;

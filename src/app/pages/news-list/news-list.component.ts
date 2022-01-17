@@ -27,6 +27,8 @@ export class NewsListComponent implements OnInit {
     this.newsUpdated = this.news.actionsObserver._value.payload;
     this.error$ = this.store.pipe(select(fromNews.getNewError));
     console.log(this.newsUpdated);
+
+
     // if (this.newsUpdated !== undefined) {
     //   if (this.newsUpdated.status !== 'ok') {
     //     this.router.navigateByUrl('/home');

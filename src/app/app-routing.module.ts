@@ -8,6 +8,9 @@ import { HealthNewsComponent } from './pages/health-news/health-news.component';
 import { ScienceNewsComponent } from './pages/science-news/science-news.component';
 import { SportNewsComponent } from './pages/sport-news/sport-news.component';
 import { TechNewsComponent } from './pages/tech-news/tech-news.component';
+import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
+import { AdminPanelComponent } from './pages/admin-panel/admin-panel.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -18,7 +21,11 @@ const routes: Routes = [
   { path: 'health', component: HealthNewsComponent },
   { path: 'science', component: ScienceNewsComponent },
   { path: 'sport', component: SportNewsComponent },
-  { path: 'tech', component: TechNewsComponent }
+  { path: 'tech', component: TechNewsComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'registracija', component: RegisterComponent },
+  { path: 'admin', component: AdminPanelComponent }
+
 ];
 
 @NgModule({

@@ -11,7 +11,6 @@ import { News } from 'src/app/models/news';
 export class NewsEffects {
     constructor(private actions$: Actions, private newsService: NewsapiservicesService) { }
 
-
     @Effect()
     loadNews$: Observable<Action> = this.actions$.pipe(
         ofType<newsActions.LoadNews>(

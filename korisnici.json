@@ -1,0 +1,34 @@
+{
+  "korisnici": [
+    {
+      "id": 0,
+      "username": "igor",
+      "password": "12345",
+      "admin": "true"
+    },
+    {
+      "id": 1,
+      "username": "boban_kokan",
+      "password": "bobic321",
+      "admin": "false"
+    },
+    {
+      "id": 2,
+      "username": "zoki_matic",
+      "password": "zekzekdadumle332",
+      "admin": "true"
+    },
+    {
+      "id": 3,
+      "username": "dasdasd",
+      "password": "asdasdsa",
+      "admin": "false"
+    },
+    {
+      "id": 4,
+      "username": "asddd",
+      "password": "ddddd",
+      "admin": "false"
+    }
+  ]
+}
