@@ -20,6 +20,7 @@ import { HealthNewsComponent } from './health-news/health-news.component';
 import { ScienceNewsComponent } from './science-news/science-news.component';
 import { SportNewsComponent } from './sport-news/sport-news.component';
 import { TechNewsComponent } from './tech-news/tech-news.component';
+import { SplitterComponent } from './splitter/splitter.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { TechNewsComponent } from './tech-news/tech-news.component';
     HealthNewsComponent,
     ScienceNewsComponent,
     SportNewsComponent,
-    TechNewsComponent
+    TechNewsComponent,
+    SplitterComponent
   ],
   imports: [
     CommonModule,

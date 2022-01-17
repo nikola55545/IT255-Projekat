@@ -11,6 +11,7 @@ import { TechNewsComponent } from './pages/tech-news/tech-news.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { AdminPanelComponent } from './pages/admin-panel/admin-panel.component';
+import { SplitterComponent } from './pages/splitter/splitter.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -24,7 +25,8 @@ const routes: Routes = [
   { path: 'tech', component: TechNewsComponent },
   { path: 'login', component: LoginComponent },
   { path: 'registracija', component: RegisterComponent },
-  { path: 'admin', component: AdminPanelComponent }
+  { path: 'admin', component: AdminPanelComponent },
+  { path: 'splitter', component: SplitterComponent }
 
 ];
 

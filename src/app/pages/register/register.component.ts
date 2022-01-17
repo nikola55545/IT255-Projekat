@@ -22,11 +22,11 @@ export class RegisterComponent implements OnInit {
     console.log(korisnik)
     this.korisnikServis.postKorisnik(korisnik).subscribe(
       res => {
-        this.router.navigate(['home']);
+        this.router.navigate(['admin']);
 
 
       }, err => {
-        alert('Pojavio se neki problem')
+        alert('Error occured...')
       }
     )
   }
