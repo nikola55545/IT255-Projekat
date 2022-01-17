@@ -20,12 +20,7 @@ import { HealthNewsComponent } from './health-news/health-news.component';
 import { ScienceNewsComponent } from './science-news/science-news.component';
 import { SportNewsComponent } from './sport-news/sport-news.component';
 import { TechNewsComponent } from './tech-news/tech-news.component';
-import { AdminPanelComponent } from './admin-panel/admin-panel.component';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
-import { NavbarComponent } from '../navbar/navbar.component';
-import { FooterComponent } from '../footer/footer.component';
-import { KorisnikCreateComponent } from '../components/korisnik-create/korisnik-create.component';
+
 
 @NgModule({
   declarations: [
@@ -36,13 +31,7 @@ import { KorisnikCreateComponent } from '../components/korisnik-create/korisnik-
     HealthNewsComponent,
     ScienceNewsComponent,
     SportNewsComponent,
-    TechNewsComponent,
-    AdminPanelComponent,
-    LoginComponent,
-    RegisterComponent,
-    NavbarComponent,
-    FooterComponent,
-    KorisnikCreateComponent
+    TechNewsComponent
   ],
   imports: [
     CommonModule,

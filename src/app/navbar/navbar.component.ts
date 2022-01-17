@@ -10,6 +10,7 @@ import { News } from 'src/app/models/news';
 import { Observable } from 'rxjs';
 import { select, Store } from '@ngrx/store';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-navbar',
@@ -19,6 +20,7 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 export class NavbarComponent implements OnInit {
 
   faSearch = faSearch;
+  faUser = faUser;
   weatherDisplay: any;
 
   isCollapsed = true;

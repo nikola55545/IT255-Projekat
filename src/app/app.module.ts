@@ -21,6 +21,8 @@ import { KorisniciComponent } from './components/korisnici/korisnici.component';
 import { KorisnikEditComponent } from './components/korisnik-edit/korisnik-edit.component';
 import { KorisnikCreateComponent } from './components/korisnik-create/korisnik-create.component';
 import { AdminPanelComponent } from './pages/admin-panel/admin-panel.component';
+import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { AdminPanelComponent } from './pages/admin-panel/admin-panel.component';
     KorisniciComponent,
     KorisnikEditComponent,
     KorisnikCreateComponent,
-    AdminPanelComponent
+    AdminPanelComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
