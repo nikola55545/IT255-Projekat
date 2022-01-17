@@ -29,6 +29,12 @@
       "username": "asddd",
       "password": "ddddd",
       "admin": "false"
+    },
+    {
+      "id": 6,
+      "username": "nikola",
+      "password": "1234",
+      "admin": false
     }
   ]
 }
