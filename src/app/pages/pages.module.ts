@@ -23,6 +23,9 @@ import { TechNewsComponent } from './tech-news/tech-news.component';
 import { AdminPanelComponent } from './admin-panel/admin-panel.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { NavbarComponent } from '../navbar/navbar.component';
+import { FooterComponent } from '../footer/footer.component';
+import { KorisnikCreateComponent } from '../components/korisnik-create/korisnik-create.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +39,10 @@ import { RegisterComponent } from './register/register.component';
     TechNewsComponent,
     AdminPanelComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    NavbarComponent,
+    FooterComponent,
+    KorisnikCreateComponent
   ],
   imports: [
     CommonModule,
