@@ -20,9 +20,6 @@ export class KorisnikCreateComponent implements OnInit {
   }
 
   registracija() {
-    if (!this.username) {
-      alert('Empty!')
-    }
     const novi_korisnik = {
       id: Object.keys(this.korisnikServis.getKorisnici().subscribe()).length,
       username: this.username,

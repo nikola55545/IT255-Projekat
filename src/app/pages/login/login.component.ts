@@ -24,14 +24,10 @@ export class LoginComponent implements OnInit {
           return k.username === this.username && k.password === this.password
         });
         if (ulogovan) {
-          alert('uspesan login')
           console.log(ulogovan.admin == true)
 
           if (!!ulogovan.admin == true)
             this.putanja.navigate(['/admin'])
-        }
-        else {
-          alert('Login nije uspesan')
         }
 
       }
