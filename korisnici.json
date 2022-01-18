@@ -2,39 +2,21 @@
   "korisnici": [
     {
       "id": 0,
-      "username": "igor",
+      "username": "Nikola",
       "password": "12345",
       "admin": "true"
     },
     {
       "id": 1,
-      "username": "boban_kokan",
-      "password": "bobic321",
+      "username": "mar_car",
+      "password": "mar_car_1",
       "admin": "false"
     },
     {
       "id": 2,
-      "username": "zoki_matic",
-      "password": "zekzekdadumle332",
-      "admin": "true"
-    },
-    {
-      "id": 3,
-      "username": "dasdasd",
-      "password": "asdasdsa",
+      "username": "sasa_matic_nevidjeno_dobar_lik",
+      "password": "123",
       "admin": "false"
-    },
-    {
-      "id": 4,
-      "username": "asddd",
-      "password": "ddddd",
-      "admin": "false"
-    },
-    {
-      "id": 6,
-      "username": "nikola",
-      "password": "1234",
-      "admin": false
     }
   ]
 }
